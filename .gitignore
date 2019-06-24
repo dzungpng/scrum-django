@@ -14,10 +14,6 @@ env.rc
 .vagrant
 .idea
 .vscode
-market_builder/settings/local.py
-market_builder/settings/deal_iq_apns_key.pem
-public/static/
-public/media/
 *.ipynb
 htmlcov/
 celerybeat-schedule
