@@ -9,8 +9,9 @@ class Sprint(models.Model):
     description = models.TextField(blank=True, default='')
     end = models.DateField(unique=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.name or _('Sprint ending %s') % self.end
+
 
 class Task(models.Model):
     """Unit of work to be done for the sprint."""
@@ -37,5 +38,5 @@ class Task(models.Model):
     due = models.DateField(blank=True, null=True)
     completed = models.DateField(blank=True, null=True)
 
-    def _str_(self):
+    def __str__(self):
         return self.name
