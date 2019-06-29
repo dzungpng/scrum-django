@@ -23,3 +23,5 @@ rebase.sh
 .coverage.localhost.*
 .env
 .envrc
+venv_python3.6/
+venv_python6/
